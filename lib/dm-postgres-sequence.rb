@@ -38,9 +38,8 @@ module DataMapper
 			end
 
 			def next_sequence
-				adapter = repository.adapter
 				sql = "SELECT nextval(?)"
-				sequence = repository(:storefront).adapter.select(sql, @sequence_name).first
+				repository.adapter.select(sql, @sequence_name).first
 			rescue ::DataObjects::SQLError
 				raise
 			end
