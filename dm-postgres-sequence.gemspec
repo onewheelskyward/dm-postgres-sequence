@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 	s.description = ""
 	s.authors     = ["Andrew Kreps"]
 	s.email       = 'andrew.kreps@gmail.com'
-	s.files       = ["lib/sequence.rb"]
+	s.files       = ["lib/dm-postgres-sequence.rb"]
 	s.homepage    =
 		'http://github.com/onewheelskyward/dm-postgres-sequence'
 end
